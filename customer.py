@@ -11,7 +11,7 @@ class Customer:
     @name.setter
     def name(self, value):
         # Setter for the name property with validation
-        if not isinstance(value, str):
+        if not instance(value, str):
             raise TypeError("Name must be of type str")
            
     #This line checks if the value is not an instance of the str (string) type.

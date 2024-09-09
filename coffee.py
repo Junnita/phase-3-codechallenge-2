@@ -33,3 +33,26 @@ class Coffee:
     #This ensures that the name is not too short and has at least 3 characters.
   
         self._name = value
+        
+        
+        
+        
+        
+        ## Testing the Coffee class
+try:
+    coffee = Coffee("Iced coffee")
+    print(coffee.name)  # Should print: Iced coffee 
+
+    coffee.name = "Iced coffee" 
+    
+    
+except AttributeError as e: #This block catches the AttributeError raised by the previous line. The except keyword is used to handle exceptions in Python. When the AttributeError is caught, the error message is stored in the variable e.
+    
+    
+    
+    print(e)
+    
+    #This line prints the error message stored in e. In this case, it will print:
+     #Cannot change the name of the coffee once set
+     
+ 
